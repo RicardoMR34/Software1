@@ -8,10 +8,10 @@ class OpeControllerTest extends TestCase
 {
     public function testSuma()
     {
-        $response = $this->get('/suma/1/3');
+        $response = $this->get('/suma/2/3');
 
         $response->assertStatus(200)
-            ->assertSeeText('4');
+            ->assertSeeText('5');
     }
     public function testResta()
     {
