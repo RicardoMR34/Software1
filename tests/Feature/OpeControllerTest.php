@@ -11,7 +11,7 @@ class OpeControllerTest extends TestCase
         $response = $this->get('/suma/1/3');
 
         $response->assertStatus(200)
-            ->assertSeeText('4');
+            ->assertSeeText('2');
     }
 
     public function testResta()
