@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\MathController;
+use App\Http\Controllers\OpeController;
 
-Route::get('/add/{a}/{b}', [MathController::class, 'add']);
-Route::get('/subtract/{a}/{b}', [MathController::class, 'subtract']);
-Route::get('/multiply/{a}/{b}', [MathController::class, 'multiply']);
-Route::get('/divide/{a}/{b}', [MathController::class, 'divide']);
-Route::get('/power/{base}/{exponent}', [MathController::class, 'power']);
-Route::get('/square-root/{number}', [MathController::class, 'squareRoot']);
+Route::get('/suma/{a}/{b}', [OpeController::class, 'suma']);
+Route::get('/resta/{a}/{b}', [OpeController::class, 'resta']);
+Route::get('/multiplicacion/{a}/{b}', [OpeController::class, 'multiplicacion']);
+Route::get('/division/{a}/{b}', [OpeController::class, 'division']);
+Route::get('/potencia/{base}/{exponent}', [OpeController::class, 'potencia']);
+Route::get('/raiz/{number}', [OpeController::class, 'raiz']);

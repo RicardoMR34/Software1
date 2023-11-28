@@ -4,38 +4,34 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MathController extends Controller
+class OpeController extends Controller
 {
-    public function add($a, $b)
+    public function suma($a, $b)
     {
         return $a + $b;
     }
-
-    public function subtract($a, $b)
+    public function resta($a, $b)
     {
         return $a - $b;
     }
-
-    public function multiply($a, $b)
+    public function multiplicacion($a, $b)
     {
         return $a * $b;
     }
-
-    public function divide($a, $b)
+    public function division($a, $b)
     {
         if ($b != 0) {
             return $a / $b;
         } else {
-            return "Cannot divide by zero";
+            return "No puedes dividir entre 0 >:(";
         }
     }
-
-    public function power($base, $exponent)
+    public function potencia($base, $exponent)
     {
         return pow($base, $exponent);
     }
 
-    public function squareRoot($number)
+    public function raiz($number)
     {
         return sqrt($number);
     }
