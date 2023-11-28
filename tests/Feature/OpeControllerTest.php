@@ -11,23 +11,22 @@ class OpeControllerTest extends TestCase
         $response = $this->get('/suma/1/3');
 
         $response->assertStatus(200)
-            ->assertSeeText('2');
+            ->assertSeeText('4');
     }
-
     public function testResta()
     {
-        $response = $this->get('/resta/5/2');
+        $response = $this->get('/resta/7/2');
 
         $response->assertStatus(200)
-            ->assertSeeText('3');
+            ->assertSeeText('5');
     }
 
     public function testMultiplicacion()
     {
-        $response = $this->get('/multiplicacion/4/3');
+        $response = $this->get('/multiplicacion/4/4');
 
         $response->assertStatus(200)
-            ->assertSeeText('12');
+            ->assertSeeText('16');
     }
 
     public function testDivision()
@@ -50,9 +49,9 @@ class OpeControllerTest extends TestCase
 
     public function testRaiz()
     {
-        $response = $this->get('/raiz/25');
+        $response = $this->get('/raiz/9');
 
         $response->assertStatus(200)
-            ->assertSeeText('5');
+            ->assertSeeText('3');
     }
 }
