@@ -18,7 +18,7 @@ class OpeControllerTest extends TestCase
         $response = $this->get('/resta/7/2');
 
         $response->assertStatus(200)
-            ->assertSeeText('5');
+            ->assertSeeText('7');
     }
 
     public function testMultiplicacion()
@@ -41,7 +41,7 @@ class OpeControllerTest extends TestCase
 
     public function testPotencia()
     {
-        $response = $this->get('/potencia/2/3');
+        $response = $this->get('/potencia/2/5');
 
         $response->assertStatus(200)
             ->assertSeeText('8');
